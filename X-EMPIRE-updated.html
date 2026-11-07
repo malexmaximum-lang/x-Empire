@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>X EMPIRE | Gaming Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #06130b;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #102719;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00ff66;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #00ff66;
+    text-shadow: 0 0 15px #00ff66;
+}
+
+header p {
+    color: #d6c56b;
+    margin-top: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 18px;
+    background: #091b10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ff66;
+}
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle, #164b27, #06130b 75%);
+    animation: appear 1.5s ease;
+}
+
+.hero h1 {
+    color: #00ff66;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    background: #00ff66;
+    color: black;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #d6c56b;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.title {
+    color: #00ff66;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #102719;
+    padding: 30px 20px;
+    border: 1px solid #1b6939;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00ff66;
+    box-shadow: 0 0 20px #00ff6633;
+}
+
+.card h3 {
+    color: #d6c56b;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.about {
+    background: #0b2013;
+    line-height: 1.8;
+}
+
+.contact p {
+    margin: 15px 0;
+}
+
+.whatsapp {
+    display: inline-block;
+    background: #19c463;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background: #102719;
+    text-align: center;
+    padding: 25px;
+    color: #ccc;
+    border-top: 2px solid #00ff66;
+}
+
+@media (max-width: 600px) {
+    .logo { font-size: 28px; }
+    .hero h1 { font-size: 30px; }
+    .products { grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); }
+    .card { padding: 22px 12px; }
+    nav { gap: 14px; }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">『✘』X EMPIREツ</div>
+    <p>YOUR TRUSTED GAMING STORE</p>
+</header>
+
+<nav>
+    <a href="#home">HOME</a>
+    <a href="#products">SERVICES</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+<div class="hero" id="home">
+
+    <h1>WELCOME TO X EMPIRE</h1>
+
+    <p>
+        Your destination for Free Fire gaming services.<br>
+        Trade, recharge and explore with X EMPIRE.
+    </p>
+
+    <a href="#products" class="button">
+        EXPLORE OUR SERVICES
+    </a>
+
+</div>
+
+<section id="products">
+
+    <h2 class="title">OUR PRODUCTS & SERVICES</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <h3>🎮 FREE FIRE ACCOUNTS</h3>
+            <p>
+                Buying and selling Free Fire accounts.
+                Contact us to discuss available accounts.
+            </p>
+            <a href="https://wa.me/2349125952716?text=Hello%20X%20EMPIRE%2C%20I%20am%20interested%20in%20Free%20Fire%20accounts."
+            class="button">ENQUIRE NOW</a>
+        </div>
+
+        <div class="card">
+            <h3>💎 FREE FIRE DIAMONDS</h3>
+            <p>Choose a diamond package from our MENA store price list below.</p>
+            <a href="#diamond-prices" class="button">VIEW DIAMOND PRICES</a>
+        </div>
+
+        <div class="card">
+            <h3>🎁 REDEEM CODES</h3>
+            <p>
+                Enquire about available Free Fire
+                redeem codes and promotions.
+            </p>
+            <a href="https://wa.me/2349125952716?text=Hello%20X%20EMPIRE%2C%20I%20want%20to%20buy%20a%20redeem%20code."
+            class="button">GET CODES</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="diamond-prices">
+    <h2 class="title">💎 FREE FIRE DIAMOND PACKAGES</h2>
+    <p style="color:#d6c56b; margin:-12px 0 25px;">MENA SERVER · PRICES IN NIGERIAN NAIRA</p>
+    <div class="products">
+        <div class="card">
+            <h3>💎 100 DIAMONDS</h3>
+            <p>Standard package</p>
+            <p style="font-size:25px;color:#00ff66;font-weight:bold;margin:15px 0;">₦1,400</p>
+            <a class="button" href="https://wa.me/2348074830885?text=Hello%20X%20EMPIRE%2C%20I%20want%20100%20diamonds%20for%20MENA.%20My%20Player%20ID%20is%3A%20">ORDER NOW</a>
+        </div>
+        <div class="card">
+            <h3>💎 310 DIAMONDS</h3>
+            <p>Popular package</p>
+            <p style="font-size:25px;color:#00ff66;font-weight:bold;margin:15px 0;">₦3,900</p>
+            <a class="button" href="https://wa.me/2348074830885?text=Hello%20X%20EMPIRE%2C%20I%20want%20310%20diamonds%20for%20MENA.%20My%20Player%20ID%20is%3A%20">ORDER NOW</a>
+        </div>
+        <div class="card">
+            <h3>💎 520 DIAMONDS</h3>
+            <p>Value package</p>
+            <p style="font-size:25px;color:#00ff66;font-weight:bold;margin:15px 0;">₦6,450</p>
+            <a class="button" href="https://wa.me/2348074830885?text=Hello%20X%20EMPIRE%2C%20I%20want%20520%20diamonds%20for%20MENA.%20My%20Player%20ID%20is%3A%20">ORDER NOW</a>
+        </div>
+        <div class="card">
+            <h3>💎 1,060 DIAMONDS</h3>
+            <p>Premium package</p>
+            <p style="font-size:25px;color:#00ff66;font-weight:bold;margin:15px 0;">₦12,650</p>
+            <a class="button" href="https://wa.me/2348074830885?text=Hello%20X%20EMPIRE%2C%20I%20want%201060%20diamonds%20for%20MENA.%20My%20Player%20ID%20is%3A%20">ORDER NOW</a>
+        </div>
+        <div class="card">
+            <h3>💎 2,180 DIAMONDS</h3>
+            <p>Big package</p>
+            <p style="font-size:25px;color:#00ff66;font-weight:bold;margin:15px 0;">₦25,750</p>
+            <a class="button" href="https://wa.me/2348074830885?text=Hello%20X%20EMPIRE%2C%20I%20want%202180%20diamonds%20for%20MENA.%20My%20Player%20ID%20is%3A%20">ORDER NOW</a>
+        </div>
+    </div>
+    <p style="color:#aaa; margin-top:22px; font-size:13px;">Please confirm package availability before making payment. Never share your game password.</p>
+</section>
+
+<section class="about" id="about">
+
+    <h2 class="title">ABOUT X EMPIRE</h2>
+
+    <p>
+        X EMPIRE is a gaming brand built on
+        trust, creativity and excellence.
+
+        <br><br>
+
+        Our goal is to provide gaming-related
+        products and services to our customers.
+
+        <br><br>
+
+        WE BUILD. WE CONNECT. WE DOMINATE.
+    </p>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="title">CONTACT X EMPIRE</h2>
+
+    <p>Want to make an enquiry or place an order?</p>
+
+    <a class="whatsapp"
+    href="https://wa.me/2349125952716">
+    WhatsApp 1
+    </a>
+
+    <a class="whatsapp"
+    href="https://wa.me/2348074830885">
+    WhatsApp 2
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 X EMPIRE. All Rights Reserved.</p>
+    <p>Built with creativity and ambition.</p>
+</footer>
+
+</body>
+</html>
